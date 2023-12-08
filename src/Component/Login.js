@@ -1,29 +1,29 @@
 import React from "react";
-import image from "../assets/image/bg-img.png";
+import image from "../assets/image/rectangle.png";
 import Paper from "@mui/material/Paper";
 import { Row, Col, Container } from "react-bootstrap";
 
 function Login() {
   return (
     <div className="login-form">
-      <div className="image">
-        <img src={image} alt="bg-img.png" />
-        <Container>
+      <div className="image ">
+        {/* <img src={image} alt="bg-img.png" /> */}
+        <Container className="login-page">
           <Row>
-            <Col md={6}>
+            <Col md={6} sm={12} >
             <Paper className="paper" elevation={3}>
               <Container>
                 <Row>
                   <Col sm={8}>
-                    <p>
+                    <h4>
                       Welcome to <span>STYLRAX</span>
-                    </p>
+                    </h4>
                   </Col>
                   <Col sm={4}>
-                    <p className="sign-account">
+                    <h6 className="sign-account">
                       No Account? <br />
                       <span className="sign-up">Sign up</span>
-                    </p>
+                    </h6>
                   </Col>
 
                   <h1>Sign in</h1>
@@ -62,9 +62,11 @@ function Login() {
               </button>
             </Paper>
             </Col>
-            <Col md={6}>
+            <Col md={6} sm={12}>
             <div className="second-section">
-          <h1 className="heading">welcome to <br/><span className="stylrax">STYLREX</span></h1>
+          <h1 className="heading">Welcome to <br/><span className="stylrax">
+             <img src={image} alt="rectangle.png" />
+            </span></h1>
           <div className="second-para">
           <p>The Best barbers & Salon in this<br/>
               century for your good looks and beauty
