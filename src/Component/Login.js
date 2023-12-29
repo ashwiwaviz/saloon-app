@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/image/rectangle.png";
+import image from "../assets/image/logo.png";
 import Paper from "@mui/material/Paper";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -7,7 +7,6 @@ function Login() {
   return (
     <div className="login-form">
       <div className="image ">
-        {/* <img src={image} alt="bg-img.png" /> */}
         <Container className="login-page">
           <Row>
             <Col md={6} sm={12} >
@@ -65,7 +64,7 @@ function Login() {
             <Col md={6} sm={12}>
             <div className="second-section">
           <h1 className="heading">Welcome to <br/><span className="stylrax">
-             <img src={image} alt="rectangle.png" />
+             <img src={image} alt="logo.png" />
             </span></h1>
           <div className="second-para">
           <p>The Best barbers & Salon in this<br/>
